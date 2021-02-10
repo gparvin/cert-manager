@@ -8,6 +8,7 @@ go_library(
     visibility = ["//visibility:private"],
     deps = [
         "//cmd/ctl/cmd:go_default_library",
+        "//pkg/util:go_default_library",
         "//pkg/util/cmd:go_default_library",
     ],
 )
@@ -34,6 +35,7 @@ filegroup(
         "//cmd/ctl/cmd:all-srcs",
         "//cmd/ctl/pkg/convert:all-srcs",
         "//cmd/ctl/pkg/create:all-srcs",
+        "//cmd/ctl/pkg/inspect:all-srcs",
         "//cmd/ctl/pkg/renew:all-srcs",
         "//cmd/ctl/pkg/status:all-srcs",
         "//cmd/ctl/pkg/util:all-srcs",
